@@ -3,9 +3,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:viewModels="clr-namespace:AvaVNC.ViewModels"
-        xmlns:hyaloid="clr-namespace:AvaVNC"
-        xmlns:vncconverters="clr-namespace:AvaVNC.Converters"
-        xmlns:hyaloid1="clr-namespace:AvaVNC;assembly=AvaVNC.Core"
+        xmlns:avaVnc="clr-namespace:AvaVNC;assembly=AvaVNC.Core"
         xmlns:converters="clr-namespace:AvaVNC.Converters;assembly=AvaVNC.Core"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="AvaVNC.Views.MainWindow"
@@ -81,7 +79,7 @@
         </Border>
     
         <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
-            <hyaloid1:VncView Connection="{Binding RfbConnection}" OptimalSize="{Binding $parent[ScrollViewer].Viewport}" />
+            <avaVnc:VncView Connection="{Binding RfbConnection}" OptimalSize="{Binding $parent[ScrollViewer].Viewport}" />
         </ScrollViewer>
     </DockPanel>
 
