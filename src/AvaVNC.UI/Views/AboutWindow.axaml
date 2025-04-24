@@ -1,0 +1,9 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="AvaVNC.Views.AboutWindow"
+        Title="About"
+        Width="450" Height="300" WindowState="Normal"  Topmost = "true"
+        CanResize = "false" WindowStartupLocation="CenterScreen">
+    <Grid>
+    </Grid>
+</Window>
